@@ -1,0 +1,10 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    roma-client (0.3.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  roma-client
