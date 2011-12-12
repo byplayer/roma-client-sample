@@ -1,12 +1,15 @@
 require 'bundler/setup'
-require 'roma/client'
+require 'roma-client'
 
 servers = [
            'localhost:12000',
            'localhost:12001'
           ]
 
-client = Roma::Client::RomaClient.new(servers)
+
+pool = Roma::Client::ClientPool.instance(:test)
+pool.servers = servers
+client = pool.client
 
 puts "# set []"
 puts client['test'] = 'test value'
