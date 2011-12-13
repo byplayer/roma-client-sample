@@ -16,4 +16,6 @@ pool.add_plugin_module(Roma::Client::Plugin::AList)
 client = pool.client
 
 puts "alist_empty?: #{client.alist_empty?('test')}"
-
+puts "push #{client.alist_push('test', 'abc')}"
+puts "alist_empty?: #{client.alist_empty?('test')}"
+puts "alist_to_json: #{client.alist_to_json('test')}"
