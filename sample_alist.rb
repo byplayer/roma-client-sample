@@ -15,7 +15,5 @@ pool.servers = servers
 pool.add_plugin_module(Roma::Client::Plugin::AList)
 client = pool.client
 
-p client.included_modules
-
 puts "alist_empty?: #{client.alist_empty?('test')}"
 
