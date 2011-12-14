@@ -30,3 +30,4 @@ sleep(5)
 puts "# get method2"
 puts client['test2']
 
+
